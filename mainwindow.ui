@@ -1,0 +1,1471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1441</width>
+    <height>721</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="runButton">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>330</y>
+      <width>441</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Run simulation</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="grassNumSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>280</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>500</number>
+    </property>
+    <property name="value">
+     <number>100</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="shroomNumSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>240</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>500</number>
+    </property>
+    <property name="value">
+     <number>50</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="deerNumSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>160</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>50</number>
+    </property>
+    <property name="value">
+     <number>5</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="bunnyNumSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>200</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>50</number>
+    </property>
+    <property name="value">
+     <number>5</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="wolfNumSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>80</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>50</number>
+    </property>
+    <property name="value">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="foxNumSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>120</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>50</number>
+    </property>
+    <property name="value">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="grassLabel">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>280</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Grass</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="shroomLabel">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>240</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Mushrooms</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bunnyLabel">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>200</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Bunnies</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="foxLabel">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>120</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Foxes</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="wolfLabel">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>80</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Wolves</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="deerLabel">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>160</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Deers</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="numLabel">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>50</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Number</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="foxHungerSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>120</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>40</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="wolfHungerSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>80</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>40</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hungerLabel">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>50</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hunger</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="deerHungerSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>160</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>30</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="bunnyHungerSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>200</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>30</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="wolfFovSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>80</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>4</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="bunnyFovSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>200</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>6</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="foxFovSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>120</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>4</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="deerFovSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>160</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>6</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="fovLabel">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>50</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>FOV</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="becomeHungryAtLabel">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>50</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Hungry at</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="bunnyGetHungryAtSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>200</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>40</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="deerGetHungryAtSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>160</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>40</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="reprChanceLabel">
+    <property name="geometry">
+     <rect>
+      <x>1280</x>
+      <y>50</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Prob. %</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="foxReprChanceSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1280</x>
+      <y>120</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>20</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="shroomReprChanceSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1280</x>
+      <y>240</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="wolfReprChanceSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1280</x>
+      <y>80</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>20</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="grassReprChanceSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1280</x>
+      <y>280</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>20</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="deerReprChanceSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1280</x>
+      <y>160</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>20</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="bunnyReprChanceSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1280</x>
+      <y>200</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>20</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="foxGetHungryAtSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>120</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>50</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="wolfGetHungryAtSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1100</x>
+      <y>80</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>50</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ageLabel">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>50</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Age</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="deerAgeSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>160</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="bunnyAgeSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>200</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="wolfAgeSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>80</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="foxAgeSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>120</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="deerReprAgeSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1370</x>
+      <y>160</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>5</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="foxReprAgeSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1370</x>
+      <y>120</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>5</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="bunnyReprAgeSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1370</x>
+      <y>200</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>5</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="wolfReprAgeSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1370</x>
+      <y>80</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>5</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="reprAgeLabel">
+    <property name="geometry">
+     <rect>
+      <x>1370</x>
+      <y>50</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Age</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="foxDeathAgeSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>120</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>1000</number>
+    </property>
+    <property name="value">
+     <number>100</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="deathAgeLabel">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>50</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Death age</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::TextFormat::AutoText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="wolfDeathAgeSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>80</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>1000</number>
+    </property>
+    <property name="value">
+     <number>100</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="deerDeathAgeSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>160</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>1000</number>
+    </property>
+    <property name="value">
+     <number>100</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="bunnyDeathAgeSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>200</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>1000</number>
+    </property>
+    <property name="value">
+     <number>100</number>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>511</width>
+      <height>511</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QSlider" name="simSpeedhorizontalSlider">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>590</y>
+      <width>160</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>600</number>
+    </property>
+    <property name="singleStep">
+     <number>200</number>
+    </property>
+    <property name="value">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Orientation::Horizontal</enum>
+    </property>
+    <property name="tickPosition">
+     <enum>QSlider::TickPosition::TicksBelow</enum>
+    </property>
+    <property name="tickInterval">
+     <number>100</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="stepTimeLabel">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>560</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sim. step time:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="legendGraphicsView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>530</y>
+      <width>31</width>
+      <height>181</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="deerNumLabel">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>620</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Deers</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="wolfNumLabel">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>680</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Wolves</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="grassNumLabel">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>530</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Grass</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bunnyNumLabel">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>590</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Bunnies</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="shroomNumLabel">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>560</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Mushrooms</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="foxNumLabel">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>650</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Foxes</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="grassNumProgressBar">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>530</y>
+      <width>118</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Orientation::Horizontal</enum>
+    </property>
+    <property name="format">
+     <string>%v</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="shroomNumProgressBar">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>560</y>
+      <width>118</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="format">
+     <string>%v</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="deerNumProgressBar">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>620</y>
+      <width>118</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="format">
+     <string>%v</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="bunnyNumProgressBar">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>590</y>
+      <width>118</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Orientation::Horizontal</enum>
+    </property>
+    <property name="format">
+     <string>%v</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="foxNumProgressBar">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>650</y>
+      <width>118</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Orientation::Horizontal</enum>
+    </property>
+    <property name="format">
+     <string>%v</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="wolfNumProgressBar">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>680</y>
+      <width>118</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="format">
+     <string>%v</string>
+    </property>
+   </widget>
+   <widget class="Line" name="preyLine">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>600</y>
+      <width>16</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Orientation::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="predatorLine">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>660</y>
+      <width>16</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Orientation::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="plantLine">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>540</y>
+      <width>16</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Orientation::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="capPlantsLabel">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>550</y>
+      <width>51</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="capPreysLabel">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>610</y>
+      <width>51</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="capPredatorsLabel">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>670</y>
+      <width>51</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="showStatsButton">
+    <property name="geometry">
+     <rect>
+      <x>1290</x>
+      <y>330</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Show stat</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="finishButton">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>330</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Finish simulation</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="reproductionLabel">
+    <property name="geometry">
+     <rect>
+      <x>1280</x>
+      <y>10</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Reproduction</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>1280</x>
+      <y>30</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Orientation::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pauseButton">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>330</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pause simulation</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addGrassButton">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>390</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add grass</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addMushroomButton">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>390</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add a mushroom</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addBunnyButton">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>390</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add a bunny</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addDeerButton">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>390</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add a deer</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addFoxButton">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>390</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add a fox</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addWolfButton">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>1290</x>
+      <y>390</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add a wolf</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>370</y>
+      <width>891</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Orientation::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="simStepLabel">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>530</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Simulation step:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="simStepNumLabel">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>530</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QChartView" name="chartView">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>430</y>
+      <width>911</width>
+      <height>291</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="valueLabel">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>50</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nutr. val.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="shroomValueSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>240</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>500</number>
+    </property>
+    <property name="value">
+     <number>20</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="deerValueSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>160</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>500</number>
+    </property>
+    <property name="value">
+     <number>100</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="bunnyValueSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>200</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>500</number>
+    </property>
+    <property name="value">
+     <number>50</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="grassValueSpinBox">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>280</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <number>500</number>
+    </property>
+    <property name="value">
+     <number>10</number>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QChartView</class>
+   <extends>QGraphicsView</extends>
+   <header>QtCharts.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
